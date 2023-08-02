@@ -1,0 +1,17 @@
+.orderContainer {
+  border: 1px solid rgb(112, 238, 8);
+}
+
+.loginDetailsBox{
+    border: 1px solid blue;
+}
+
+.addressBox{
+    border: 1px solid saddlebrown;
+}
+.orderSummaryBox{
+    border: 1px solid black;
+}
+.paymentOptions{
+    border: 1px solid violet;
+}

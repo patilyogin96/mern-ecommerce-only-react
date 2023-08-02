@@ -1,0 +1,10 @@
+.cardContainer {
+  border: 1px solid red;
+  width: 31%;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* height: 200px; */
+ 
+}

@@ -1,0 +1,40 @@
+.cartContainer {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cardContainer {
+  border: 1px solid greenyellow;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.imgBox {
+  /* width: 100%; */
+  /* width: 20%; */
+  border: 1px solid rgb(255, 0, 0);
+  width: 112px;
+  height: 112px;
+}
+
+.imgEleStyle {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.descBox {
+  /* width: 60%; */
+  border: 1px solid blue;
+}
+.priceBox {
+  border: 1px solid blue;
+}
+
+/* price card styles */
+
+.priceCard {
+  border: 1px solid salmon;
+}

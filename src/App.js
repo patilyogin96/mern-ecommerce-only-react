@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
+import { useDispatch } from "react-redux";
+import { fetchCategoryFilters } from "./Redux/Actions/actions";
+import ResponsiveAppBar from "./Components/Navbar/Navbar";
+import AppRouter from "./AppRouter/AppRouter";
+import Footer from "./Pages/Footer/Footer";
 
 function App() {
+  let dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCategoryFilters());
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <div>
+          <ResponsiveAppBar />
+        </div>
+        <div style={{ flex: 1 }}>
+          <AppRouter />
+        </div>
+        <div>
+          <Footer />
+        </div>
+      </div>
+    </>
   );
 }
 

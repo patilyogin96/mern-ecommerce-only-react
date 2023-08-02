@@ -1,0 +1,25 @@
+.cardContainer {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* height: auto; */
+  cursor: pointer;
+}
+
+.imgBox {
+  /* width: 100%; */
+  /* width: 20%; */
+}
+
+.descBox {
+  /* width: 60%; */
+}
+.priceBox {
+}
+
+.buyBox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

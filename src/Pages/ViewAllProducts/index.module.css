@@ -1,0 +1,17 @@
+.container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  width: 100%;
+}
+
+.filterContainer {
+  border: 1px solid red;
+  width: 22%;
+}
+.prodListContainer {
+  border: 1px solid green;
+  width: 78%;
+  padding: 3px;
+}
